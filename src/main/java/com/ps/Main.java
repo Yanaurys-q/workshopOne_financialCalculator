@@ -44,6 +44,7 @@ public class Main {
                 // Display results
                 System.out.printf("Monthly Payment: $%.2f%n", monthlyPayment);
                 System.out.printf("Total Interest Paid: $%.2f%n", totalInterest);
+                break;
 
             case 2:
                 // Future Value Calculator
