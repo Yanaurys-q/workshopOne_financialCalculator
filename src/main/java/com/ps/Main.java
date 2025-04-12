@@ -42,8 +42,8 @@ public class Main {
                 double totalInterest = totalPaid - principal;
 
                 // Display results
-                System.out.printf("Monthly Payment: $%.3f%n", monthlyPayment);
-                System.out.printf("Total Interest Paid: $%.3f%n", totalInterest);
+                System.out.printf("Monthly Payment: $%.2f%n", monthlyPayment);
+                System.out.printf("Total Interest Paid: $%.2f%n", totalInterest);
 
             case 2:
                 // Future Value Calculator
