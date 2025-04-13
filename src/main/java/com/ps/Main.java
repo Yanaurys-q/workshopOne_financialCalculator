@@ -14,8 +14,20 @@ public class Main {
             System.out.println("3) Present Value of Annuity Calculator");
             System.out.println("4) Retirement Savings Calculator");
             System.out.print("Please enter your choice (1-4) <3: ");
-            int givenCommand = scanner.nextInt();
 
+            int givenCommand = 0;
+            // Validate input for command selection
+
+            if (scanner.hasNextInt())
+            {
+                givenCommand = scanner.nextInt();
+            }
+            else
+            {
+                System.out.println("Invalid input. Please enter an integer between 1 and 4.");
+                scanner.next(); // Consume invalid input
+                continue;
+            }
             switch (givenCommand) {
                 case 1:
                     // Mortgage Calculator
@@ -149,12 +161,12 @@ public class Main {
                     System.out.println("Invalid choice. Please select a valid option.");
                     break;
             }
-
             // Ask if the user wants to perform another calculation :D
             System.out.print("Would you like to perform another calculation? (y/n): ");
             continueCalculating = scanner.next().charAt(0);
 
-            if (continueCalculating != 'y' && continueCalculating != 'n') {
+            if (continueCalculating != 'y' && continueCalculating != 'n')
+            {
                 System.out.println("Invalid choice. Please select 'y' or 'n'.");
             }
         }
